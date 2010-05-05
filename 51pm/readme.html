@@ -1,0 +1,45 @@
+<html>
+<body>
+	<h1>Overview</h1>
+	<p>51PM is a simple yet sophisticated project management tool. It is built on top of YII framework, 
+	an excellent PHP MVC framework. 
+	</p>
+	
+	<p>
+	It is assumed that you understand PHP and Mysql. If you need host the application in  a hosting company,
+	you need understand the hosting company's directory structure for you domain. After all, installing PHP applications
+	is basically copying files from one location to another.
+	</p>
+	
+	<h1>Installation</h1>
+	Installation is very straightforward as shown in the following steps:
+	<ul>
+	  <li>Download 51pm.zip</li>
+	  <li>Upload it to your web server. You can place it into the root directory or a subdir</li>
+	  <li>Create a mysql database</li>
+	  <li>Launch http://yourhost/{your install dir}/install.php</li>
+	</ul>
+	
+	The installation process is 2-minutes process. In no time your 51PM system is ready for use!
+	
+	<h1>Trouble Shooting</h1>
+	Even though we take pride in our quality products, we realize we are human beings that make mistakes here and
+	there. So, if you need reach out to us, be sure to email us: admin@redbookmedia.com. We will try our best to get
+	back to you as soon as possible.
+	<dl>
+		<dt>I ran into a "internal server error".</dt>
+		<dd>
+			Most likely, this is a problem related URL rewritting. Make sure the URL rewrite module is enabled in 
+			your Apache configuration. Then, open .htaccess at top level, notice these following lines:
+			<pre>
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+# the following is used when installed in root of a domain or subdomain
+#RewriteRule ^.*$ /index.php [L]
+			</pre>
+		
+		</dd>
+	</dl> 
+</body>
+</html>

@@ -1,0 +1,13 @@
+<h1>[subject]</h1>
+You have been invited to a Phoenix account at http://prjname.phoenix.com/.<br>
+by [from] <br>
+
+[content]
+
+<br>
+### CLICK THE LINK BELOW TO ACCEPT THIS INVITATION ###<br>
+
+<a href="http://localhost/phoenix/user/accept/u/[uuid]" target="_blank">http://localhost/phoenix/user/accept/u/[uuid]</a><br>
+
+You will be given the option to create a new Lighthouse user profile or
+choose an existing one for this invitation.

@@ -1,0 +1,145 @@
+div.combo {
+    position:relative;
+    left: 0px;
+    top: 0px;
+}
+
+.combo input {
+    position: absolute;
+}
+
+.combo div.icon {
+    position:absolute;
+}
+
+.combo div.list-wrapper {
+    position: absolute;
+    overflow: hidden;
+    height: 200px; 
+    max-height: 200px;
+    z-index: 99999;
+}
+
+.combo div.list-wrapper-up {}
+
+.combo ul {}
+
+.combo  li {
+    height: 20px;
+}
+
+.combo li.active {}
+
+.combo .visible {
+    display: block;
+}
+
+.combo .invisible {
+    display: none;
+}
+
+.combo input.empty {}
+
+div.sexy {
+	border-top-width: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	width: 146px;
+	padding-top: 0px;
+	white-space: nowrap;
+	height: 24px;
+	border-right-width: 0px
+}
+
+div.sexy input {
+	border-right: #3a3c6c 1px solid;
+	padding-right: 3px;
+	border-top: #3a3c6c 1px solid;
+	padding-left: 3px;
+	background: url(../images/sexy-input-bg.jpg) #fff repeat-x 0px 0px;
+	left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	font: 11px/ 19px tahoma, arial, helvetica, sans-serif;
+	vertical-align: middle;
+	border-left: #3a3c6c 1px solid;
+	width: 180px;
+	padding-top: 3px;
+	border-bottom: #3a3c6c 1px solid;
+	top: 0px;
+	height: 19px;
+}
+
+div.sexy div.icon {
+	border-top-width: 0px;
+	border-left-width: 0px;
+	background: url(../images/comboarrow.jpg) no-repeat 0px 0px;
+	left: 180px;
+	border-bottom-width: 0px;
+	width: 24px;
+	cursor: pointer;
+	top: 0px;
+	height: 24px;
+	border-right-width: 0px
+}
+
+div.sexy div.list-wrapper {
+	border-right: #3a3c6c 1px solid;
+	padding-right: 0px;
+	border-top: #3a3c6c 0px solid;
+	padding-left: 0px;
+	left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-left: #3a3c6c 1px solid;
+	width: 204px;
+	bottom: auto;
+	padding-top: 0px;
+	border-bottom: #3a3c6c 1px solid;
+	top: 24px;
+	background-color: #ffffff
+}
+
+div.sexy div.list-wrapper-up {
+	border-right: #3a3c6c 1px solid;
+	border-top: #3a3c6c 1px solid;
+	border-left: #3a3c6c 1px solid;
+	bottom: 24px;
+	border-bottom: #3a3c6c 0px solid;
+	top: auto
+}
+
+div.sexy ul {
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-top: 0px;
+	list-style-type: none;
+	height: 200px;
+	text-align: left;
+}
+
+div.sexy li {
+	color: #555;
+	padding-right: 0px;
+	padding-left: 5px;
+	padding-bottom: 0px;
+	margin: 0px;
+	font: 11px tahoma, arial, helvetica, sans-serif;
+	cursor: pointer;
+	padding-top: 4px;
+	background-color: #ffffff
+}
+
+div.sexy li.active {
+	background-color: rgb(160, 169, 194)
+}
+
+div.sexy input.empty {
+	color: gray;
+}
