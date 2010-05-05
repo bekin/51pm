@@ -1,0 +1,19 @@
+<?php
+return array(
+	'ago'=>'前',
+	'day'=>'天',
+	'days'=>'天',
+	'hour'=>'小时',
+	'hours'=>'小时',
+	'minute'=>'分钟?',
+	'minutes'=>'分钟',
+	'month'=>'月',
+	'months'=>'月',
+	'second'=>'秒',
+	'seconds'=>'秒',
+	'week'=>'周',
+	'weeks'=>'周',
+	'year'=>'年',
+	'years'=>'年',
+); 
+?>

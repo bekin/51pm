@@ -1,0 +1,90 @@
+.clear {
+    zoom: 1 !important;     
+}
+
+
+
+#nav {
+  margin-top: 8px;
+}
+
+#project-nav ul li {
+  z-index: 2 !important;
+}
+
+.pbar-container {
+  text-align: left;
+  margin: 0;
+}
+
+.opts a {
+  display: block;
+}
+
+.radioed input[type=radio] {
+  margin-top: 18px;
+}
+
+#member-tabs li {
+  float: left;
+}
+
+li.aticket {
+  zoom: 1;
+}
+
+
+/*#userbadge {
+  z-index: 0 !important;
+}
+*/
+
+/*#sbar {
+  z-index: 0;
+  position: relative;
+}
+
+#sbar .sblock {
+  z-index: 0;
+  position: relative;
+}
+*/
+
+#header {
+  z-index: 1;
+}
+
+#userbadge {
+  z-index: 2;
+}
+
+#userbadge #memberships {
+  width: 98%;
+  left: 0 !important;
+  z-index: 3;
+}
+
+#userbadge #memberships li {
+  z-index: 4 !important;
+  position: relative;
+}
+
+#userbadge #membership-q {
+  width: 98%;
+}
+
+#bulk {
+  zoom: 1;
+  padding: 1px;
+}
+
+#bulk ul.nextrow li {
+  padding: 3px !important;
+  zoom: 1 !important;
+  position: static !important;
+}
+
+#bulk ul input.mini {
+  font-size: 20px !important;
+  padding: 0 !important;
+}

@@ -1,0 +1,110 @@
+<?php
+
+return array(
+	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
+	'name'=>'{APP_NAME}',
+
+	'timezone'=>'{TIME_ZONE}',
+
+	'sourceLanguage'=>'en_us',
+	'language'=>'{LANGUAGE}',
+
+	// preloading 'log' component
+	'preload'=>array('log'),
+
+	// autoloading model and component classes
+	'import'=>array(
+		'application.models.*',
+		'application.components.*',
+		'application.controllers._BaseController',
+		'application.models.DbOptimisticLockingException',
+		'application.models.ResultPage',
+	),
+
+	// application components
+	'components'=>array(
+		'log'=>array(
+			'class'=>'CLogRouter',
+			'routes'=>array(
+				array(
+					'class'=>'CFileLogRoute',
+					'levels'=>'error, warning, info, trace',
+					'maxFileSize'=>5000,
+					'maxLogFiles'=>30,
+				),
+			),
+		),
+		'user'=>array(
+			// enable cookie-based authentication
+			'allowAutoLogin'=>true,
+			// specify the login URL here
+			'loginUrl'=>array('site/login'),
+		),
+		'urlManager'=>array(
+			'urlFormat'=>'path',
+			'showScriptName'=>false,
+			'rules'=>array (
+				'auth'=>'site/auth',
+				'login'=>'site/login',
+				'logout'=>'site/logout',
+				'rss'=>'site/rss',
+				'project/update/<id:\d+>'=>'project/update',
+				'project/<id:\d+>'=>'project/show',
+		
+				'page/<id:\d+>'=>'page/show',
+				'page/update/<id:\d+>'=>'page/update',
+
+				'messages'=>'message/list',		
+				'message/<id:\d+>'=>'message/show',
+				'message/update/<id:\d+>'=>'message/update',
+
+				'milestones'=>'milestone/list',		
+				'milestone/<id:\d+>'=>'milestone/show',
+				'milestone/update/<id:\d+>'=>'milestone/update',
+		
+				'ticket/list/<project:\d+>'=>'ticket/list',		
+				'ticket/<id:\d+>'=>'ticket/show',
+				'ticket/update/<id:\d+>'=>'ticket/update',
+				'ticket/edit/<id:\d+>'=>'ticket/edit',
+		
+				'user/<id:\d+>'=>'user/show',
+			),
+		),
+		'db'=>array(
+			'connectionString'=>'mysql:host={DB_HOST};dbname={DB_NAME}',
+			'username'=>'{DB_USER}',
+			'password'=>'{DB_PASSWORD}',
+			'charset'=>'utf8',
+			'enableParamLogging'=>true
+		),
+		'session'=>array(
+			'autoStart'=>true,
+		),
+		
+	),
+
+	// application-level parameters that can be accessed
+	// using Yii::app()->params['paramName']
+	'params'=>array(
+		// file storage location
+		'contentRoot'=>'protected' . DIRECTORY_SEPARATOR . 'content',
+	
+		// avatar root: must be an public-accessible directory
+		'avatarRoot'=>'avatar',
+		
+		// parameters for email
+		'adminEmail'=>'{ADMIN_EMAIL}', 
+		'adminName'=>'Administrator', 
+		'from'=>'{ADMIN_EMAIL}',
+		'fromname'=>'Administrator',
+	
+	    'mailEngine'=>'{MAIL_ENGINE}',     // valid values: mail/smtp/sendmail	
+		'username'=>'{SMTP_USER}',
+		'password'=>'{SMTP_PASSWORD}',
+		'smtp_host'=>'{SMTP_HOST}',
+		'smtp_port'=>'{SMTP_PORT}',
+	
+		// default active menu show
+		'activemenu'=>'site',
+	),
+);
